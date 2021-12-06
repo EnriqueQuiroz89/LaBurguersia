@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>A la burguer</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #navbar {
+            position: fixed;
+            height: 5vw;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            background-color: yellowgreen;
+            bottom: 6vw;
+        }
+
+        #titulo {
+            top: 4vw;
+            height: 10vw;
+            width: 100%;
+            margin: 0px auto;
+            background-color: tomato;
+        }
+
+        #flex-container {
+            min-height: 100vh;
+            width: 95%;
+            margin: 0px auto;
+            background-color: transparent;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .item-on-flex {
+            width: 20%;
+            min-height: 40%;
+            background-color: transparent;
+            margin: 1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+
+        .container-img-item {
+            width: 90%;
+            height: 60%;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+        }
+
+        .name-item {
+            width: 90%;
+            height: 10%;
+            background-color: transparent;
+            text-align: center;
+            color: white;
+            font-size: xx-large;
+
+        }
+
+        .puntaje-item {
+            width: 90%;
+            height: 20%;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img-item {
+            max-width: 80%;
+            height: auto;
+        }
+
+        .img-star {
+            width: 5vw;
+            height: 5vw;
+        }
+
+        @media(max-width:900px) {
+            .item-on-flex {
+                width: 30%;
+                min-height: 40%;
+                background-color: transparent;
+                margin: 1%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+  
+
+        @media(max-width:600px) {
+            .item-on-flex {
+                width: 45%;
+                min-height: 40%;
+                background-color: transparent;
+                margin: 1%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+
+
+        @media(max-width:400px) {
+            .item-on-flex {
+                width: 95%;
+                min-height: 40%;
+                background-color: transparent;
+                margin: 1%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar"></nav>
+    </header>
+
+    <div id="titulo"></div>
+
+    <div id="flex-container">
+
+        <div class="item-on-flex">
+            <div class="container-img-item">
+                <img class="img-item"
+                    src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/MX/hamburguesas-de-carne/big-mac.png"
+                    alt="Es la imagen de una hamburguesa">
+            </div>
+            <div class="name-item">big mac</div>
+            <div class="puntaje-item">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+
+            </div>
+        </div>
+
+        <div class="item-on-flex">
+            <div class="container-img-item">
+                <img class="img-item"
+                    src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/MX/hamburguesas-de-carne/cuarto-de-libra.png"
+                    alt="Es la imagen de una hamburguesa">
+            </div>
+            <div class="name-item"><span>cuarto de libra</span></div>
+            <div class="puntaje-item">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+
+
+            </div>
+        </div>
+
+        <div class="item-on-flex">
+            <div class="container-img-item">
+                <img class="img-item"
+                    src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/MX/hamburguesas-de-carne/cuarto-de-libra-doble.png"
+                    alt="Es la imagen de una hamburguesa">
+            </div>
+            <div class="name-item"><span>francesa</span></div>
+            <div class="puntaje-item">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+
+
+            </div>
+        </div>
+
+
+        <div class="item-on-flex">
+            <div class="container-img-item">
+                <img class="img-item"
+                    src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/MX/hamburguesas-de-carne/mc-nifica.png"
+                    alt="Es la imagen de una hamburguesa">
+            </div>
+            <div class="name-item">italiana</div>
+            <div class="puntaje-item">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+
+            </div>
+        </div>
+
+        <div class="item-on-flex">
+            <div class="container-img-item">
+                <img class="img-item"
+                    src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/MX/hamburguesas-de-carne/hamb-doble-con-queso.png"
+                    alt="Es la imagen de una hamburguesa">
+            </div>
+            <div class="name-item"><span>belle roma</span></div>
+            <div class="puntaje-item">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+
+            </div>
+        </div>
+
+        <div class="item-on-flex">
+            <div class="container-img-item">
+                <img class="img-item"
+                    src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/MX/hamburguesas-de-carne/hamburguesa-con-queso.png"
+                    alt="Es la imagen de una hamburguesa">
+            </div>
+            <div class="name-item"><span>tijuana</span></div>
+            <div class="puntaje-item">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+
+            </div>
+        </div>
+
+
+        <div class="item-on-flex">
+            <div class="container-img-item">
+                <img class="img-item"
+                    src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/MX/hamburguesas-de-carne/signature-bbq-crispy.png"
+                    alt="Es la imagen de una hamburguesa">
+            </div>
+            <div class="name-item">pikachu</div>
+            <div class="puntaje-item">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+
+
+            </div>
+        </div>
+
+        <div class="item-on-flex">
+            <div class="container-img-item">
+                <img class="img-item"
+                    src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/MX/hamburguesas-de-carne/signature-clubhouse.png"
+                    alt="Es la imagen de una hamburguesa">
+            </div>
+            <div class="name-item"><span>culiacan</span></div>
+            <div class="puntaje-item">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+
+            </div>
+        </div>
+
+        <div class="item-on-flex">
+            <div class="container-img-item">
+                <img class="img-item"
+                    src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/MX/hamburguesas-de-carne/deluxe-habanero.png"
+                    alt="Es la imagen de una hamburguesa">
+            </div>
+            <div class="name-item"><span>venecia</span></div>
+            <div class="puntaje-item">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+                <img class="img-star"
+                    src="https://static.wikia.nocookie.net/marioparty/images/5/5e/Estrella.png/revision/latest?cb=20121216194216&path-prefix=es"
+                    alt="">
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
